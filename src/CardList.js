@@ -35,18 +35,6 @@ let oPeople = [
 ];
 
 const CardList = () => {
-  // return(
-  //     {
-  //         oPeople.map((item) => (
-  //         <Card
-  //             id={item.id}
-  //             name={item.name}
-  //             email={item.email}
-  //             imglnk={item.img}
-  //         />
-  //     ))}
-  // );
-
   return oPeople.map((item) => (
     <Card id={item.id} name={item.name} email={item.email} imglnk={item.img} />
   ));

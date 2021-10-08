@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import CardList from "./CardList";
-import SearchField from "./SearchField";
-import { oPeople } from "./CardData";
+import CardList from "../components/CardList";
+import SearchField from "../components/SearchField";
+import { oPeople } from "../components/CardData";
 
 class App extends Component {
   constructor() {
@@ -48,8 +48,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="tc">
-        <h1 className="header f1">RoboFriends</h1>
+      <div className="tc pa4">
+        <h1 className="header f1" style={{ margin: 0 }}>
+          RoboFriends
+        </h1>
         <SearchField onUpdate={this.updatePeople} />
         <CardList myPeople={this.filterPeople()} />
       </div>

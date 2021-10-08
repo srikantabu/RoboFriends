@@ -10,7 +10,7 @@ const SearchField = (props) => {
   };
 
   return (
-    <div className="pa2">
+    <div className="pa4">
       <input
         className="pa3 ba b--green bg-lightest-blue"
         type="text"
